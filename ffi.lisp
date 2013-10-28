@@ -21,8 +21,9 @@
 (cffi:define-foreign-library fftw3
     ((or :darwin :macosx) (:or #P"/opt/local/lib/libfftw3.dylib"
                                #P"/usr/lib/libfftw3.dylib"))
-    (:linux (:or #P"/usr/lib/libfftw3.so"
-                 #P"/usr/local/lib/libfftw3.so"))
+    (:linux (:or "libfftw3.so.3"
+	     #P"/usr/lib/libfftw3.so"
+	     #P"/usr/local/lib/libfftw3.so"))
   (t (:default "libfftw3")))
 
 (cffi:use-foreign-library fftw3)
