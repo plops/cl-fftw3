@@ -1,0 +1,19 @@
+Source: cl-fftw3
+Section: lisp
+Priority: optional
+Maintainer: Kevin M. Rosenberg <kmr@debian.org>
+Build-Depends-Indep: dh-lisp
+Build-Depends: debhelper (>= 7.0.0)
+Standards-Version: 3.8.2.0
+Homepage: http://files.b9.com/cl-fftw3/
+Vcs-Git: git://git.b9.com/cl-fftw3.git
+Vcs-Browser: http://git.b9.com/?p=cl-fftw3.git
+
+Package: cl-fftw3
+Architecture: all
+Depends: ${misc:Depends}, libfftw3-dev, cl-kmrcl, cl-cffi
+Description: Common Lisp package for using the FFTW3 library
+ This package provides an interface for Common Lisp programs to use
+ the FFTW3 Fourier transform library. A number of higher-level interfaces
+ has been added in addition to the native interface to the FFTW3
+ C-based library.

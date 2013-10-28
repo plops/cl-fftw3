@@ -1,0 +1,5 @@
+cl-fftw3 (1.0-1) unstable; urgency=low
+
+  * Initial upload (closes:539793)
+
+ -- Kevin M. Rosenberg <kmr@debian.org>  Mon, 03 Aug 2009 23:08:55 -0600
